@@ -28,11 +28,11 @@
       <p *ngIf="showData">Secret Password= tuna</p>
 
       <div
+        *ngFor="let item of clickedDates; let i = index"
         [ngStyle]="{
-          backgroundColor: item.index + 1 >= 5 ? 'blue' : 'transparent'
+          backgroundColor: i >= 4 ? 'blue' : 'transparent'
         }"
-        [ngClass]="{'higher-than-five': item.index + 1 >= 5}"
-        *ngFor="let item of clickedDates"
+        [ngClass]="{ 'higher-than-five': i >= 4 }"
       >
         {{ item.date }}
       </div>
