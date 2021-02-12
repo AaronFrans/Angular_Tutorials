@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './server.component.html',
   styles: [
     `
-      h3 {
-        color: orange;
+      .online{
+        color: white;
       }
     `,
   ],
