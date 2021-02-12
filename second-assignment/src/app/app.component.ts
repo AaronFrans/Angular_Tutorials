@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bootstrap-styling-tutorial';
+  username: string = "Please input your username"
+
+  isEmpty () {
+    return this.username.length === 0;
+  }
+
+  onResetUsername(){
+    this.username = ``
+  }
 }
